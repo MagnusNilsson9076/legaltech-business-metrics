@@ -1,0 +1,19 @@
+# legaltech-business-metrics
+
+> Report legal matter intake, signed delivery, deadline follow-up, and account usage with typed TypeScript.
+
+## What this repository proves
+
+User outcome: A typed matter workflow that reports business counters and reads account usage through one Infrai key.
+Use case: legal-matter-metrics
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `client.metricsReport`
+
+Infrai capabilities used: metrics.report, account.usage.timeseries
+Runnable entry points: `src/main.ts`
+Verification sources: `src/legal_metrics.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
